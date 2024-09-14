@@ -116,7 +116,7 @@ section{
 }
 
 .right .img__card{
-    height: 85vh;
+    height: 75vh;
     width: 100%;
     /*border: 1px solid black;*/
     border-radius: 10px;  
@@ -124,12 +124,13 @@ section{
 }
 
 img{
-    width: 100%;
+    width: 320px;
     box-sizing: border-box;
-    height: 100%;
+    height: 425px;
     border-radius: 10px;
     transition: 0.2s ease-in-out;
     cursor: pointer;
+    object-fit: cover;
 }
 img:hover{
     transform: scale(1.1);
@@ -216,6 +217,10 @@ header{
 
 @media (max-width: 767px){
 
+    body{
+        display: inline;
+    }
+
     nav{
         background:white;
         position: fixed;
@@ -278,15 +283,59 @@ header{
     }
     .container{
         display: inline;
+        height: 85vh;
     }
-    .left{
+    .container .left{
         display: flex;
         flex-direction: column;
         align-items: left;
+        height: 75vh;
+        border: 1px solid black;
     }
-    .right{
-        display: inline;
+
+    .container .right{
+        width: 100%;
+        height: 35vh;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, 50%);
+        align-items: center;
+        justify-content: center;
+        border-radius: 10px;
+        box-sizing: border-box;
+        border: 1px solid black;
     }
+    
+    .right .img__card{
+        height: 40vh;
+        width: 100%;
+        border: 1px solid black;
+        border-radius: 10px;  
+        padding: 5px;      
+    }
+
+    button{
+        width: 50%;
+        height: 8vh;
+        background: var(--blush);
+        border-radius: 10px;
+        font-size: 100%;
+        color: var(--white);
+        font-weight: 600;
+        border: none;
+        cursor: pointer;
+        transition: 0.2s ease-in-out;
+    }
+
+    img{
+        width: 100%;
+        box-sizing: border-box;
+        height: 75%;
+        border-radius: 10px;
+        transition: 0.2s ease-in-out;
+        cursor: pointer;
+        object-fit: cover;
+    }
+
     /* Fonts*/
     h1{
         font-size: 45px;
@@ -304,6 +353,42 @@ header{
         font-weight: 500;
     }
     /* Fonts*/
+
+    /**/
+    /*header*/
+    header{
+        justify-content: center;
+        color: var(--murrey);
+        text-align: center;
+        width: 100%;
+        font-size: 200%;
+        font-weight: 600;
+    }
+    /*header*/
+
+    .right__about{
+        width: 100%;
+        height: 85vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 10px;
+        box-sizing: border-box;
+        border: 1px solid black;
+        background-position: center;
+        padding: 10px;
+    }
+
+    /*Section About*/
+
+
+    /*services*/
+
+    .container .card{
+        width: 100%;
+        height: 80vh;
+        border: 1px solid black;
+    }
+    /**/
 }
 
-/**/
