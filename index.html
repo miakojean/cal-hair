@@ -25,9 +25,9 @@
         </button>
     </nav>
 
-    <section>
+    <section> <!-- Landing page-->
         <div class="container">
-            <div class="left">
+            <div class="land">
                 <h1>
                     Venez vous rendre belle et séduisante!!!
                 </h1>
@@ -35,52 +35,70 @@
                     Avec notre échantillon variée de coiffures et nos coiffeuses
                     professionnelles
                 </h2>
-                <button class="Rendez-vous" id="rendezVousBtn">Reserver</button>
+                <div class="land_button">
+                    <button class="Rendez-vous" id="rendezVousBtn">Reserver</button>
+                </div>
             </div>
-            <div class="right">
-                <div class="img__card">
+            <div class="card">
+                <div class="card__pic">
                     <img src="StockCake-Stylish Hair Preparation_1726192811.jpg" alt="">
                 </div>
-                <div class="img__card">
-                    <img src="StockCake-Stylish Retro Fashion_1726192688.jpg" alt="">
+                <div class="card__pic">
+                    <img src="stylist-woman-taking-care-her-client-afro-hair.jpg" alt="">
                 </div>
-            </div>
-        </div>
-    </section>
-
-    <section> <!--A propos de nous-->
-        <header> Qui sommes-nous?</header>
-        <div class="container">
-            <div class="left">
-                <p>
-                    <span> CAL-HAIR</span> est une plateforme de service pour 
-                    tresses africaines et européennes et tout service relatif à l'esthétique de la femme.
-                    Le but est de permettre depuis chez vous de vous rendre belle.
-                    Finis les files d'attente les histoires longue dans les salons de coiffures.
-                </p>
-                <button class="Rendez-vous" id="rendezVousBtn">S'inscrire</button>
-            </div>
-            <div class="right__about">
-                <div class="img__card">
+                <div class="card__pic">
                     <img src="StockCake-Elegant braid hairstyle_1726192854.jpg" alt="">
                 </div>
             </div>
         </div>
     </section>
 
-    <section> <!--A propos de nous-->
-        <header> Nos services</header>
-        <div class="container">
-            <div class="card">
-                
+    <section id="about_us"> <!--A propos de nous-->
+        <header> Qui sommes-nous?</header>
+        <div class="container__about">
+
+            <div class="text__about">
+                <p>
+                    CAL-HAIR est une plateforme de service de coiffures, de tresses, 
+                    de variéte africaines et européennes. Nous proposons aussi tout 
+                    type de service de manicures et pédicures.
+                </p>
+                <div class="land_button_about">
+                    <button class="connexion" id="rendezVousBtn">Se connecter</button>
+                </div>
             </div>
-            <div class="card">
-                
+            <div class="card__about">
+                <div class="card__pic__about">
+                    <img src="StockCake-Stylish Retro Fashion_1726192688.jpg" class="about__pic" alt="">
+                </div>
             </div>
-            <div class="card"></div>
-                
-            </div>
+
         </div>
+        
+    </section>
+
+    <section> <!--A service-->
+        <header> Nos services</header>
+
+        <div class="container__services">
+
+            <div class="services_card">
+                <h3>Tresses et coiffures</h3>
+            </div>
+            <div class="services_card">
+                <h3>Soins esthétiques</h3>
+            </div>
+            <div class="services_card">
+                <h3>Produits cosmétiques</h3>
+            </div>
+
+        </div>
+        
+    </section>
+
+    <section> <!--A propos de nous-->
+        <header> Nous contacter</header>
+        
     </section>
 
     <script src="index.js"></script>
