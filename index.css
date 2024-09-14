@@ -54,6 +54,9 @@ nav{
     text-decoration: none;
     transition: 0.3s;
 }
+.nav__logo a:hover{
+    color: var(--rusty-red);
+}
 .nav__links{
     list-style: none;
     display: flex;
@@ -66,20 +69,23 @@ nav{
     font-weight: 700;
     color: black;
     text-decoration: none;
-    transition: 0.3s;
+    transition: 0.3s ease-in-out;
 }
 .link a:hover{
-    color: var(--murrey);
+    color: var(--bright-pink-crayola);
     background-color: var(--white);
+    transform: scale(1.05);
 }
 .link .nav__btn{
     padding: .5rem 2rem;
     color: var(--white) !important;
-    background-color: var(--blush);
+    background-color: var(--rusty-red);
     border-radius: 5px;
+    transition: 0.2s ease-in-out;
 }
 .link .nav__btn:hover{
-    background-color: var(--murrey);
+    background-color: var(--bright-pink-crayola);
+    transform: scale(1.05);
 }
 
 /*section*/
@@ -127,9 +133,12 @@ section{
 }
 
 .Rendez-vous{
-    width: 50%;
-    background: var(--raspberry-rose);
+    width: 40%;
+    background: var(--rusty-red);
     font-weight: 600;
+}
+.Rendez-vous:hover{
+    background: var(--rusty-red);
 }
 
 .container .card{
@@ -138,6 +147,7 @@ section{
     display: flex;
     align-items: center;
     border: 1px solid black;
+    gap: 10px;
 }
 .card .card__pic{
     border: 1px solid black;
@@ -184,6 +194,12 @@ h2{
 h3{
     font-size: 30px;
     font-weight: 800;
+    color: white;
+}
+h4{
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
 }
 
 p{
@@ -208,7 +224,7 @@ button{
 }
 
 button:hover{
-    background: var(--murrey);
+    background: var(--bright-pink-crayola);
     color: var(--misty-rose);
     transform: scale(1.05);
 }
@@ -265,8 +281,14 @@ header{
 }
 .connexion{
     width: 30%;
-    background: var(--raspberry-rose);
+    background: var(--rusty-red);
     font-weight: 600;
+}
+
+.connexion:hover{
+    color: var(--white);
+    background: var(--rusty-red);
+    transform: scale(1.05);
 }
 
 .container__about .card{
@@ -308,16 +330,92 @@ header{
 }
 
 .container__services .services_card{
-    width: 100%;
-    height: 75vh;
+    width: 70%;
+    height: 50vh;
     border: 1px solid black;
     display: flex;
     flex-direction: column;
     text-align: center;
     justify-content: center;
+    cursor: pointer;
+    border-radius: 10px;
+    background: var(--rusty-red);
+    padding: 20px;
+    transition: 0.2s ease-in-out;
+    gap: 10px;
+}
+i{
+    font-size: 60px;
+    color: white;
+}
+.services_card:hover{
+    transform: scale(1.01);
+}
+/*services*/
+.container__contacts{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    width: 100%;
+    border: 1px solid black;
+    padding: 40px;
+    gap: 10px; 
+}
+.contacts{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    height: 65vh;
+    border: 1px solid black;
 }
 
-/*services*/
+.contacts i{
+    color: var(--rusty-red);
+    font-size: 25px;
+}
+
+.contacts ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    list-style: none;
+    margin-top: 30px;
+    padding: 30px;
+    gap: 15px;
+    color: black;
+}
+
+.contacts ul li{
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.contacts ul a{
+    color: var(--rusty-red);
+    font-size: 25px;
+    margin-right: 10px;
+    text-decoration: none;
+}
+/*contact*/
+
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 6vh;
+    width: 100%;
+    border: 1px solid black;
+}
+
+footer h4{
+    font-size: 20px;
+    font-weight: 600;
+    color: black;
+}
 
 /* Responsive works */
 
