@@ -8,6 +8,12 @@
   --white: #ffffff;
   --max-width: 1200px;
   --header-font: "Playfair Display", serif;
+  --dark-purple: #260c1aff;
+  --eggplant: #432e36ff;
+  --liver: #5f4842ff;
+  --rosy-brown: #af8d86ff;
+  --rosy-brown-2: #cea6a6ff;
+  --tea-rose-red: #edbfc6ff;
 }
 
 * {
@@ -45,7 +51,7 @@
     font-size: 1rem;
     white-space: nowrap;
     color: var(--text-dark);
-    background-color: var(--primary-color);
+    background-color: var(--rosy-brown-2);
     border-radius: 4px;
     box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
     cursor: pointer;
@@ -211,39 +217,28 @@ nav {
     color: var(--text-light);
 }
 
-.about__content__form{
-    display: flex;
-    flex-direction: column;
-    padding: 1px;
-    background: var(--secondary-color);
-}
-
-.about__content__form h2{
-    font-family: "Playfair Display", serif;
-    font-size: 1.2rem;
-    color: var(--text-light);
-}
-
 .input_group{
-    display: flex;
-    flex-direction: column;
-    margin: 5px;
-    padding: 10px;
+  display: flex;
+  flex-direction: column;
+  /*border: 1px solid black;*/
+  padding-top: 10px;
 }
 
 .input_group input{
-    height: 6vh;
-    border: 1px solid #face59;
-    font-family: "poppins", sans-serif;
-    border-radius: 8px;
-    padding: 5px;
+  height: 6vh;
+  border: 1px solid #af8d86ff;
+  font-family: "poppins", sans-serif;
+  border-radius: 8px;
+  padding: 5px;
 }
-.about__content__form .btn{
-    margin-left: 15px;
+
+input{
+  margin-bottom: 10px;
+
 }
 
 input:focus{
-    outline: none;
+  outline: none;
 }
 
 /**/
@@ -309,11 +304,12 @@ input:focus{
   
   .footer__socials a {
     font-size: 1.75rem;
-    color: var(--text-dark);
+    color: var(--liver);
+    transition: 0.3s;
 }
   
 .footer__socials a:hover {
-    color: var(--primary-color);
+    color: var(--rosy-brown-2);
 }
   
 .footer__bar {
