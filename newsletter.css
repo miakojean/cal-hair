@@ -34,7 +34,7 @@
     font-family: var(--header-font);
     color: var(--text-dark);
 }
-  
+
 .section__subheader {
     margin-bottom: 10px;
     font-size: 1.2rem;
@@ -168,6 +168,14 @@ nav {
     display: grid;
     gap: 2rem;
     text-align: center;
+}
+
+.about__content h4{
+  font-family: 'poppins', sans-serif;
+  margin-bottom: 1.5rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: var(--text-dark);
 }
 
 .about__header {
