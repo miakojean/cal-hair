@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
@@ -13,48 +12,61 @@
       href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
     />
     <link rel="stylesheet" href="login.css" />
-    <title>CALADRIUS | Login</title>
-</head>
-<body>
-
+    <title>CAL-HAIR | Acceuil</title>
+  </head>
+  <body>
     <nav>
-        <div class="nav__logo"><a href="#">Cal-Hair</a></div>
-        <ul class="nav__links" id="nav-links">
-          <li class="link"><a href="#home">Home</a></li>
-          <li class="link"><a href="#about">About</a></li>
-          <li class="link"><a href="#portfolio">Portfolio</a></li>
-          <li class="link"><a href="#client">Client</a></li>
-          <li class="link"><a href="#news">News</a></li>
-          <li class="link"><a href="#contact">Contact</a></li>
-        </ul>
-        <div class="nav__menu__btn" id="menu-btn">
-          <span><i class="ri-menu-3-line"></i></span>
-        </div>
-    </nav>
-    
-    <section class="section__login" id="about">
-      <div class="section__login_subheader">
-
-        <div class="login__container">
-          <h3>Connexion</h3>
-          <form action="" method="post" class="newsletter__form">
-            <div class="input_group">
-              <label for="">Username</label>
-              <input type="text" placeholder="Votre username" required />
-            </div>
-            <div class="input_group">
-              <label for="">Mot de passe</label>
-              <input type="password" placeholder="Mot de passe"  required/>
-            </div>
-            <button type="submit" class="btn"> S'inscrire</button>
-          </form>
-        </div>
-
+      <div class="nav__logo"><a href="#">Cal-Hair</a></div>
+      <ul class="nav__links" id="nav-links">
+        <li class="link"><a href="#home">Accueil</a></li>
+        <li class="link"><a href="#about">A propos</a></li>
+        <li class="link"><a href="#portfolio">Produits</a></li>
+        <li class="link"><a href="#client">Astuces</a></li>
+        <li class="link"><a href="#news">News</a></li>
+        <li class="link"><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="nav__menu__btn" id="menu-btn">
+        <span><i class="ri-menu-3-line"></i></span>
       </div>
-        
+    </nav>
+
+    <section class="section__container about__container" id="about">
+      <div class="about__header">   
+        <div class="about__content">
+          <h2 class="section__header">Ravis de vous revoir parmis nous</h2>
+          <p class="paragraph">
+              Nous vous souhaitons une belle session de travail sur 
+              notre site web. Profiter et faites-en une belle expérience.
+          </p>
+        </div>
+
+        <div class="about__content" id = "login__content">
+            <h4>se connecter</h4>
+                <!--<div class="message__container">
+                  <p>
+                    {{message}}
+                  </p>
+                </div>-->
+              <form action="" method="post">
+                <div class="input_group">
+                  <label for="username">Username</label>
+                  <input type="text" placeholder="Votre prénom" required />
+                </div>
+                <div class="input_group">
+                  <label for="username">Mot de passe</label>
+                  <input type="password" placeholder="Votre email"  required/>
+                </div>
+                <button type="submit" class="btn" id = "log__btn"> connexion</button>
+              </form>
+              <div class="no_account">
+                <a href="#">Mot de passe oublié?</a>
+                <p>pas de compte? <a href="#">Créez-en un</a></p>
+              </div>
+        </div>
+      </div>
     </section>
 
-    <footer class="section__container footer__container"></footer>
+    <footer class="section__container footer__container">
       <div class="footer__col">
         <h5><a href="#">Cal-Hair</a></h5>
       </div>
@@ -91,5 +103,5 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="index.js"></script>
-</body>
+  </body>
 </html>

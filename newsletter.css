@@ -268,9 +268,26 @@ input{
 input:focus{
   outline: none;
 }
-
 /**/
 
+/**/
+.contact {
+  background-color: var(--secondary-color);
+}
+
+.contact__container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  text-align: center;
+}
+
+.contact__container .section__header {
+  max-width: 800px;
+  font-size: 3.5rem;
+  font-weight: 500;
+}
+/**/
 .footer__container {
     display: grid;
     gap: 2rem;
